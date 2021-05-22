@@ -50,8 +50,8 @@ const HeaderWrap = Styled.div`
     margin: 0 auto;
     display : ${(props) => (props.path ? "none" : "flex")};
     & > p {
-      color:${(props) => props.theme.newgray};
-      //color: ${(props) => (props.select ? "#3C4F7C" : "#7E7E7E")};
+      //color:${(props) => props.theme.newgray};
+      color: ${(props) => (props.pathSerious ? "#3C4F7C" : "#7E7E7E")};
       box-sizing: border-box;
       padding:5px;
       border-bottom: 2px solid;
@@ -64,6 +64,7 @@ const HeaderWrap = Styled.div`
     }
     & p:nth-of-type(2) {
 		margin-left: 100px;
+    color: ${(props) => (props.pathHumor ? "#3C4F7C" : "#7E7E7E")};
 	}
   }
   
@@ -71,26 +72,27 @@ const HeaderWrap = Styled.div`
 
 const Header = ({ history, location }) => {
   const path = location.pathname === "/" ? true : false;
-  //const [select, setSelect] = useState(false);
+  const pathSerious = location.pathname === "/serious" ? true : false;
+  const pathHumor = location.pathname === "/humor" ? true : false;
 
   return (
-    <HeaderWrap path={path}>
-      <div className='header'>
-        <div className='header__top'>
+    <HeaderWrap path={path} pathSerious={pathSerious} pathHumor={pathHumor}>
+      <div className="header">
+        <div className="header__top">
           <img
-            className='header__top--logo'
+            className="header__top--logo"
             src={LogoIcon}
-            alt='logo'
+            alt="logo"
             onClick={() => {
               history.push("/");
             }}
           />
-          <div className='header__top--user'>
-            <img src={User} alt='profile' />
+          <div className="header__top--user">
+            <img src={User} alt="profile" />
             <p>김솝트님, 안녕하세요!</p>
           </div>
         </div>
-        <div className='header__bottom'>
+        <div className="header__bottom">
           <p
             onClick={() => {
               history.push("/serious");
