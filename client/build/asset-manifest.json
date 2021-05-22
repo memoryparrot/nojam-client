@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.js": "/static/js/main.cecda53a.chunk.js",
+    "main.js.map": "/static/js/main.cecda53a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.900dd88b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.900dd88b.js.map",
+    "static/js/2.e944e620.chunk.js": "/static/js/2.e944e620.chunk.js",
+    "static/js/2.e944e620.chunk.js.map": "/static/js/2.e944e620.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.e944e620.chunk.js.LICENSE.txt": "/static/js/2.e944e620.chunk.js.LICENSE.txt",
+    "static/media/FlyHumorBird.0518d9a5.svg": "/static/media/FlyHumorBird.0518d9a5.svg",
+    "static/media/FlySeriousBird.72417706.svg": "/static/media/FlySeriousBird.72417706.svg",
+    "static/media/Humor.cb697aa3.svg": "/static/media/Humor.cb697aa3.svg",
+    "static/media/HumorBird.87c91278.svg": "/static/media/HumorBird.87c91278.svg",
+    "static/media/HumorButton.a9692945.svg": "/static/media/HumorButton.a9692945.svg",
+    "static/media/Logo.b4bd005a.svg": "/static/media/Logo.b4bd005a.svg",
+    "static/media/Serious.e307a023.svg": "/static/media/Serious.e307a023.svg",
+    "static/media/SeriousBird.066fcbdd.svg": "/static/media/SeriousBird.066fcbdd.svg",
+    "static/media/SeriousBtn.52fcff4c.svg": "/static/media/SeriousBtn.52fcff4c.svg",
+    "static/media/userImage.53f35786.svg": "/static/media/userImage.53f35786.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.900dd88b.js",
+    "static/js/2.e944e620.chunk.js",
+    "static/js/main.cecda53a.chunk.js"
+  ]
+}
