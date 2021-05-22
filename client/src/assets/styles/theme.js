@@ -2,6 +2,7 @@ const colorStyles = {
   newnavy: "#3C4F7C",
   neworange: "#E67F35",
   newwhite: "#F9F7F3",
+  newgray: "#7E7E7E",
 };
 
 const text = {
