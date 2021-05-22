@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Styled from "styled-components";
-import { userApi } from "../libs/api";
 import { commentApi } from "../libs/api";
 import SeriousComment from "../Components/common/SeriousComment";
 import SeriousImg from "../assets/icons/Serious.svg";
@@ -110,9 +109,12 @@ export default class Serious extends Component {
   }
   render() {
     const { resultArray } = this.state;
+    console.log(resultArray);
     const Hello = resultArray?.filter((item) => item.division === "첫인사");
     const Context = resultArray?.filter((item) => item.division === "본문");
-    const Conclusion = resultArray?.filter((item) => item.division === "본문");
+    const Conclusion = resultArray?.filter(
+      (item) => item.division === "맺음말"
+    );
     return (
       <SeriousContainer>
         <ImageContainer>
