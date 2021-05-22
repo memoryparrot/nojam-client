@@ -1,14 +1,16 @@
 import React, { useRef } from 'react';
 import styled from 'styled-components';
+import { withRouter } from 'react-router-dom';
 
 import HumorBird from '../../../src/assets/icons/HumorBird.svg';
 import SeriousBird from '../../../src/assets/icons/SeriousBird.svg';
 import FlyHumorBird from '../../../src/assets/icons/FlyHumorBird.svg';
 import FlySeriousBird from '../../../src/assets/icons/FlySeriousBird.svg';
 
-const Choose = () => {
+const Choose = ({ history }) => {
   const SeriousbirdImg = useRef();
   const HumorbirdImg = useRef();
+  const Text = useRef();
 
   return (
       <ChooseWrapper>
@@ -29,7 +31,9 @@ const Choose = () => {
             onMouseEnter={() => (SeriousbirdImg.current.src = FlySeriousBird)}
             onMouseLeave={() => (SeriousbirdImg.current.src = SeriousBird)}
             ref={SeriousbirdImg}
-            onClick
+            onClick={() => {
+              history.push("/serious")
+            }}
             />
           <ImgWrapper 
             src={HumorBird} 
@@ -37,6 +41,9 @@ const Choose = () => {
             onMouseEnter={() => (HumorbirdImg.current.src = FlyHumorBird)}
             onMouseLeave={() => (HumorbirdImg.current.src = HumorBird)}
             ref={HumorbirdImg}
+            onClick={() => {
+              history.push("/humor")
+            }}
             />
         </ChooseImage>
         <TextWrapper>
@@ -48,10 +55,9 @@ const Choose = () => {
               교수님께 메일 보내는 학생에게는<br />
               <Span3>나, 진지무새가 딱이지!</Span3>
             </Span2>
-            
           </HoverText>
           <HoverText>
-            <Span1>안녕? 내 이름은 진지무새!</Span1>
+            <Span4>하이-Hi! 나는 유머무새!</Span4>
             <Span2>
               풍부한 표현이 기억나지 않는 사람들,<br/>
               ㅋㅋㅋ만 남발하기엔 너무나 웃긴 사람들,<br/>
@@ -60,18 +66,19 @@ const Choose = () => {
             </Span2>
           </HoverText>
         </TextWrapper>
-
       </ChooseWrapper>
-    
   );
 };
 
-export default Choose;
+export default withRouter(Choose);
 
 const ChooseWrapper = styled.nav`
-  width: 1920px;
+  width: 100%;
   height: 801px;
   background-color: ${(props) => props.theme.newwhite};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 
@@ -108,6 +115,7 @@ const ChooseImage = styled.nav`
   margin-right: 400px;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 `;
 
 const SpanWrapper = styled.span`
@@ -121,6 +129,7 @@ const ImgWrapper = styled.img`
   :hover {
     cursor: pointer;
   }
+  margin: 0px 300px 0px 300px;
 `;
 
 const TextWrapper = styled.p`
@@ -132,13 +141,14 @@ const TextWrapper = styled.p`
 `;
 
 const HoverText = styled.div`
-  width: 334px;
+  width: 360px;
   height: 180px;
   box-shadow: 0px 5px 14px rgba(60, 79, 124, 0.16);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   line-height: 1.5;
+  margin: 0 300px 0 300px;
 `;
 
 const Span1 = styled.span`
@@ -166,4 +176,14 @@ const Span3 = styled.span`
   font-weight: 700;
   font-size: 19px;
   color: #7E7E7E;
+`;
+
+const Span4 = styled.span`
+  font-family: "Apple Gothic";
+  font-weight: 700;
+  font-size: 20px;
+  color: #E67F35;
+  position: relative;
+  left: 32px;
+  top: 26px;
 `;
