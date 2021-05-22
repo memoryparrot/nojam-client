@@ -11,10 +11,11 @@ const ContentWrapper = Styled.div`
     display: flex;
     justify-content: space-between;
     transition: .8s;
+    background-color: white;
     :hover{
-    box-shadow: 0px 20px 40px rgba(0,0,0,0.2);
-    transform: scale(1.01,1.01);
-    cursor: pointer;
+        box-shadow: 0px 20px 40px rgba(0,0,0,0.2);
+        transform: scale(1.01,1.01);
+        cursor: pointer;
     }
 `;
 
@@ -22,7 +23,10 @@ const Content = Styled.div`
     font-family: "Apple Gothic";
     font-weight: 300;
     padding: 7px;
-    font-size: 14px;
+    font-size: 11.5px;
+    display: flex;
+    align-items: center;
+    line-height: 1.3;
 `;
 
 const ImageContainer = Styled.div`

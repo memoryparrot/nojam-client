@@ -11,7 +11,10 @@ const SeriousContainer = Styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: 20vh;
+    margin: 0;
+    padding-bottom: 5vh;
+    top: 0;
+    background-color: ${(props) => props.theme.newwhite};
 `;
 
 const ImageContainer = Styled.div`
@@ -51,19 +54,19 @@ const TitleContainer = Styled.div`
         color: ${(props) => props.theme.textGray};
         }
         &__btncontainer{
-            width: 55%;    
+            width: 60%;    
             display: flex;
             justify-content: space-between;
             &__btn{
             font-family: "Apple Gothic";
-            font-weight: 500;
+            font-weight: 600;
             font-size: 14px;
             height: 28px;
-            width: 60px;
+            width: 70px;
             border: solid 1.5px ${(props) => props.theme.newnavy};
             background-color: white;
             border-radius: 50px;
-            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+            
             :hover {
                 box-shadow: 0px 20px 40px rgba(0,0,0,0.2);
                 transform: scale(1.03,1.03);
@@ -120,27 +123,29 @@ export default class Serious extends Component {
             <div className='title__name'>우리 인사해요</div>
             <div className='title__subname'>어떤 인사로 말을 건네볼까요?</div>
             <div className='title__btncontainer'>
-              <button className='title__btncontainer__btn'>버튼 1</button>
-              <button className='title__btncontainer__btn'>버튼 2</button>
-              <button className='title__btncontainer__btn'>버튼 3</button>
+              <button className='title__btncontainer__btn'>아침/저녁</button>
+              <button className='title__btncontainer__btn'>요일별</button>
+              <button className='title__btncontainer__btn'>계절</button>
             </div>
           </div>
           <div className='title'>
-            <div className='title__name'>우리 인사해요</div>
-            <div className='title__subname'>어떤 인사로 말을 건네볼까요?</div>
+            <div className='title__name'>우리 소통해요</div>
+            <div className='title__subname'>어떤 말로 소통을 해볼까요?</div>
             <div className='title__btncontainer'>
-              <button className='title__btncontainer__btn'>버튼 1</button>
-              <button className='title__btncontainer__btn'>버튼 2</button>
-              <button className='title__btncontainer__btn'>버튼 3</button>
+              <button className='title__btncontainer__btn'>전달</button>
+              <button className='title__btncontainer__btn'>질문</button>
+              <button className='title__btncontainer__btn'>요청</button>
             </div>
           </div>
           <div className='title'>
-            <div className='title__name'>우리 인사해요</div>
-            <div className='title__subname'>어떤 인사로 말을 건네볼까요?</div>
+            <div className='title__name'>우리 응원해요</div>
+            <div className='title__subname'>
+              기분 좋은 응원으로 마무리를 해보아요
+            </div>
             <div className='title__btncontainer'>
-              <button className='title__btncontainer__btn'>버튼 1</button>
-              <button className='title__btncontainer__btn'>버튼 2</button>
-              <button className='title__btncontainer__btn'>버튼 3</button>
+              <button className='title__btncontainer__btn'>요일별</button>
+              <button className='title__btncontainer__btn'>계절별</button>
+              <button className='title__btncontainer__btn'>코로나</button>
             </div>
           </div>
         </TitleContainer>

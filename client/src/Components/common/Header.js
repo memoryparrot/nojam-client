@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Styled from "styled-components";
 import { withRouter } from "react-router-dom";
 import LogoIcon from "../../assets/icons/Logo.svg";
+import User from "../../assets/icons/userImage.svg";
 
 const HeaderWrap = Styled.div`
   .header {
@@ -12,14 +13,14 @@ const HeaderWrap = Styled.div`
 	  align-items: center;
 	  background-color: ${(props) => props.theme.newwhite};
     width: 100%;
-	  height: 20vh;
+	  height: 30vh;
 	  color: white;
     &__top {
       display: flex;
       flex-direction: row;
       align-items: center;
       //justify-content: space-between;
-      margin: 20px auto 0px;
+      margin: 0 auto;
       height:150px;
     }
   }
@@ -31,7 +32,7 @@ const HeaderWrap = Styled.div`
   }
   .header__top--user{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     width: 170px;
     height: 36px;
     margin-left: 400px;
@@ -46,7 +47,7 @@ const HeaderWrap = Styled.div`
   }
   .header__bottom{
     flex-direction: row;
-    margin: 20px auto;
+    margin: 0 auto;
     display : ${(props) => (props.path ? "none" : "flex")};
     & > p {
       color:${(props) => props.theme.newgray};
@@ -68,36 +69,28 @@ const HeaderWrap = Styled.div`
   
 `;
 
-const user = [
-  {
-    id: 1,
-    name: "김솝트",
-    photoUrl: "",
-  },
-];
-
 const Header = ({ history, location }) => {
   const path = location.pathname === "/" ? true : false;
   //const [select, setSelect] = useState(false);
 
   return (
     <HeaderWrap path={path}>
-      <div className="header">
-        <div className="header__top">
+      <div className='header'>
+        <div className='header__top'>
           <img
-            className="header__top--logo"
+            className='header__top--logo'
             src={LogoIcon}
-            alt="logo"
+            alt='logo'
             onClick={() => {
               history.push("/");
             }}
           />
-          <div className="header__top--user">
-            <img src="" alt="profile" />
-            <p>{user.name}님, 안녕하세요!</p>
+          <div className='header__top--user'>
+            <img src={User} alt='profile' />
+            <p>김솝트님, 안녕하세요!</p>
           </div>
         </div>
-        <div className="header__bottom">
+        <div className='header__bottom'>
           <p
             onClick={() => {
               history.push("/serious");
