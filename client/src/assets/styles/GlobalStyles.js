@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     box-sizing: border-box;
     font-size: 18px;
+    
 
   @media (max-width: 12G00px) {
     padding-right: 1.8vw;
