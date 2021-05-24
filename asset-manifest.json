@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/nojam-client/static/js/main.2098d6fa.chunk.js",
-    "main.js.map": "/nojam-client/static/js/main.2098d6fa.chunk.js.map",
+    "main.js": "/nojam-client/static/js/main.193d1107.chunk.js",
+    "main.js.map": "/nojam-client/static/js/main.193d1107.chunk.js.map",
     "runtime-main.js": "/nojam-client/static/js/runtime-main.c27f1cd8.js",
     "runtime-main.js.map": "/nojam-client/static/js/runtime-main.c27f1cd8.js.map",
-    "static/js/2.e73d0027.chunk.js": "/nojam-client/static/js/2.e73d0027.chunk.js",
-    "static/js/2.e73d0027.chunk.js.map": "/nojam-client/static/js/2.e73d0027.chunk.js.map",
+    "static/js/2.800a992c.chunk.js": "/nojam-client/static/js/2.800a992c.chunk.js",
+    "static/js/2.800a992c.chunk.js.map": "/nojam-client/static/js/2.800a992c.chunk.js.map",
     "index.html": "/nojam-client/index.html",
-    "static/js/2.e73d0027.chunk.js.LICENSE.txt": "/nojam-client/static/js/2.e73d0027.chunk.js.LICENSE.txt",
+    "static/js/2.800a992c.chunk.js.LICENSE.txt": "/nojam-client/static/js/2.800a992c.chunk.js.LICENSE.txt",
     "static/media/FlyHumorBird.0518d9a5.svg": "/nojam-client/static/media/FlyHumorBird.0518d9a5.svg",
     "static/media/FlySeriousBird.72417706.svg": "/nojam-client/static/media/FlySeriousBird.72417706.svg",
     "static/media/Humor.cb697aa3.svg": "/nojam-client/static/media/Humor.cb697aa3.svg",
@@ -21,7 +21,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c27f1cd8.js",
-    "static/js/2.e73d0027.chunk.js",
-    "static/js/main.2098d6fa.chunk.js"
+    "static/js/2.800a992c.chunk.js",
+    "static/js/main.193d1107.chunk.js"
   ]
 }
